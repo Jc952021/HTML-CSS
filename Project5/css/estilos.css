@@ -1,0 +1,195 @@
+:root {
+    --rojo: #e50914;
+    --fondo: #141414;
+  }
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+body{
+    background-color: var(--fondo);
+    font-family: "Open Sans", sans-serif;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 0;
+}
+.header__title{
+    color: var(--rojo);
+    font-size: 40px;
+    font-weight: normal;
+    font-family: "Bebas Neue", cursive;
+}
+
+.header__link{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 20px;
+}
+.header__link:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.header__link-bold{
+    color: #fff;
+}
+/* PELI-PRINCIPAL */
+.pelicula-principal{
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/imgnet.jpg);
+    min-height: 48.62em;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3.12em;
+}
+.pelicula__info{
+margin: 0 auto;
+margin-bottom: 6.25em;
+}
+.peli__title{
+font-size: 3.12em;
+margin-bottom: 0.4em;
+font-weight: 600;
+}
+.peli__paragraph{
+max-width: 50%;
+font-size: 1em;
+line-height: 1.75em;
+font-weight: normal;
+margin-bottom: 1.25em;
+}
+
+.peli__btn{
+    padding: 0.93em 1.87em;
+    border-radius: 0.31em;
+    border: none;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 1.12em;
+    margin-right: 1.25em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+.peli__btn:hover{
+    background-color: white;
+    color: #000;
+}
+.peli__btn i{
+    margin-right: 1.25em;
+}
+/* PELI-RECOMENDADAS */
+.peli-recomendadas{
+    margin-bottom: 70px;
+}
+.peli__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.peli__header h3{
+    font-size: 30px;
+    color: #fff;
+}
+.controles button{
+    width: 10px;
+    height: 3px;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+.controles button:hover,
+.controles .activo{
+    background-color: red;
+}
+.peli__container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.flecha__izquierda,
+.flecha__derecha{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    height: 50%;
+    width: 50px;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.5;
+    z-index: 500;
+    cursor: pointer;
+    transition: 0.2s ease all;
+    
+}
+.flecha__izquierda{
+    left: 0;
+}
+.flecha__derecha{
+    right: 0;
+}
+.flecha__izquierda:hover,
+.flecha__derecha:hover{
+    background-color: #000;
+}
+.carousel__container{
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.carousel{
+    display: flex;
+}
+.pelicula{
+    min-width: 20%;
+    transition: 0.2s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.pelicula:hover{
+    transform: scale(1.2,1.2);
+    transform-origin: center;
+}
+.pelicula img{
+    width: 100%;
+    vertical-align: top;
+}
+/* MEDIAQUERY */
+@media(max-width:800px){
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header__title{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .pelicula-principal{
+        font-size: 14px;
+    }
+    .peli__paragraph{
+        max-width: 100%;
+    }
+    .carousel__container{
+        overflow: visible;
+    }
+    .carousel{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .flecha__izquierda,
+    .controles,
+    .flecha__derecha{
+        display: none;
+    }
+}

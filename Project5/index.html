@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header container">
+      <h2 class="header__title">Peliculas</h2>
+      <div class="header__nav">
+        <a href="#" class="header__link header__link-bold">Inicio</a>
+        <a href="#" class="header__link">Programas</a>
+        <a href="#" class="header__link">Peliculas</a>
+        <a href="#" class="header__link">Más recientes</a>
+        <a href="#" class="header__link">Mi lista</a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="pelicula-principal">
+        <div class="pelicula__info container">
+          <h1 class="peli__title">Interstellar</h1>
+          <p class="peli__paragraph">
+            Narra las aventuras de un grupo de exploradores que hacen uso de un
+            agujero de gusano recientemente descubierto para superar las
+            limitaciones de los viajes espaciales tripulados y vencer las
+            inmensas distancias que tiene un viaje interestelar.
+          </p>
+          <button role="button" class="peli__btn">
+            <i class="fas fa-play"></i>Reproducir
+          </button>
+          <button role="button" class="peli__btn">
+            <i class="fas fa-info-circle"></i>Más Información
+          </button>
+        </div>
+      </section>
+      <section class="peli-recomendadas container">
+        <div class="peli__header">
+          <h3>Películas recomendadas</h3>
+          <div class="controles">
+            
+          </div>
+        </div>
+        
+        <div class="peli__container">
+          <button class="flecha__izquierda" id="flecha-izquierda">
+            <i class="fas fa-angle-left"></i>
+          </button>
+          <div class="carousel__container">
+            <div class="carousel">
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet1.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet2.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet3.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet4.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet5.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet6.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet7.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet1.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet2.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet3.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet4.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet5.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet6.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="./img/imgnet7.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <button role="button" class="flecha__derecha" id="flecha-derecha">
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/practica.js"></script>
+  </body>
+</html>
